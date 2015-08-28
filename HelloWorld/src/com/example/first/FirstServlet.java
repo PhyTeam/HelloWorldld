@@ -28,6 +28,10 @@ public class FirstServlet extends HttpServlet {
      */
     public FirstServlet() {
         // TODO Auto-generated constructor stub
+    	// Add some stuff here
+    	// 
+    	System.out.print(getServletInfo());
+    	System.out.print("Servlet has been created at " + this.getServletInfo());
     }
 
 	/**
