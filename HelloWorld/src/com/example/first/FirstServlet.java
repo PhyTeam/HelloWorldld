@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.json.JSONObject;
 
 import com.bookstore.dao.*;
 import com.bookstore.model.MemberUser;
@@ -40,6 +41,8 @@ public class FirstServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO:
 		response.setContentType("text/html");
+		JSONObject jObj = new JSONObject();
+		jObj.append("name", "Bui Ba Phuc");
 		
 		if(request.getParameter("username") != null)
 		{
