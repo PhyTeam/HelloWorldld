@@ -37,4 +37,12 @@ public class MemberUser {
 		this.fname = fname;
 	}
 	
+	public MemberUser(String username, String password, String fname, String lname) {
+		super();
+		this.username = username;
+		this.password = password;
+		this.fname = fname;
+		this.lname = lname;
+	}
+	
 }
