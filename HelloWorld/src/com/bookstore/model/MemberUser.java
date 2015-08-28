@@ -4,7 +4,13 @@ public class MemberUser {
 	private String username;
 	private String password;
 	private String fname;
-	
+	private String lname;
+	public String getLname() {
+		return lname;
+	}
+	public void setLname(String lname) {
+		this.lname = lname;
+	}
 	public String getUsername() {
 		return username;
 	}
